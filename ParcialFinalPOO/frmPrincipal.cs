@@ -17,7 +17,7 @@ namespace ParcialFinalPOO
             MessageBox.Show("Bienvenido/a");
             try
             {
-                string query = $"SELECT nombre FROM departamento WHERE id_departamento ='{depa}'";
+                string query = $"SELECT nombre FROM departamento WHERE id_departamento ={depa}";
                 var dt = ConnectionDB.ExecuteQuery(query);
                 var dr = dt.Rows[0];
                 var tipodeusuario = Convert.ToString(dr[0].ToString());

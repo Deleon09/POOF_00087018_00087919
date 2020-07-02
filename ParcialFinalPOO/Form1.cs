@@ -24,9 +24,8 @@ namespace ParcialFinalPOO
             cmbUsuario.DataSource = null;
             cmbUsuario.ValueMember = "id_usuario";
             cmbUsuario.DisplayMember = "nombre";
-            cmbUsuario.DataSource = miProxyS.Peticion(1,1,
-                "Beto","Leon","beto","895623","28/02/2000");
-            u = (usuario)cmbUsuario.SelectedItem;
+            cmbUsuario.DataSource = miProxyS.Peticionlista();
+            u = (usuario) cmbUsuario.SelectedItem;
 
             /*string query = "select nombre from usuario";
             var users = ConnectionDB.ExecuteQuery(query);
@@ -54,7 +53,7 @@ namespace ParcialFinalPOO
                 if (txtContrasena.Text.Equals(contrasena))
                 {
                     u.nombre =  cmbUsuario.Text;
-                    frmPrincipal ventana = new frmPrincipal(u.id_departamento);
+                    frmPrincipal ventana = new frmPrincipal((int) u.id_departamento);
                     ventana.Show();
                 }
                 else

@@ -52,8 +52,13 @@ namespace ParcialFinalPOO
 
                 if (txtContrasena.Text.Equals(contrasena))
                 {
+                    string query2 = $"SELECT id_departamento FROM usuario WHERE nombre ='{cmbUsuario.Text}'";
+                    var dt2 = ConnectionDB.ExecuteQuery(query2);
+                    var dr2 = dt2.Rows[0];
+                    var departamento = Convert.ToInt32(dr2[0].ToString());
+                    
                     u.nombre =  cmbUsuario.Text;
-                    frmPrincipal ventana = new frmPrincipal((int) u.id_departamento);
+                    frmPrincipal ventana = new frmPrincipal(departamento);
                     ventana.Show();
                 }
                 else

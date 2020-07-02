@@ -31,8 +31,7 @@ namespace ParcialFinalPOO
                 {
                     tabContenedor.TabPages[0].Parent = null;
                     tabContenedor.TabPages[1].Parent = null;
-                    tabContenedor.TabPages[1].Parent = null;
-                    tabContenedor.TabPages[1].Parent = null;
+                    tabContenedor.TabPages[2].Parent = null;
                 }
                 else
                 {
@@ -47,6 +46,22 @@ namespace ParcialFinalPOO
                 MessageBox.Show("Ha ocurrido un error");
             }
 
+        }
+
+        private void btnCargarDatos_Click(object sender, EventArgs e)
+        {
+            
+            /*try
+            {
+                var dt = ConnectionDB.ExecuteQuery("SELECT * FROM appuser");
+
+                dgvEmpleado.DataSource = dt;
+                MessageBox.Show("Datos obtenidos correctamente");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ha ocurrido un problema");
+            }*/
         }
     }
 } 

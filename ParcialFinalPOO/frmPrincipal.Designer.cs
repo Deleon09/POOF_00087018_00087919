@@ -130,6 +130,7 @@ namespace ParcialFinalPOO
             this.btnCargarDatos.TabIndex = 0;
             this.btnCargarDatos.Text = "Cargar Datos";
             this.btnCargarDatos.UseVisualStyleBackColor = true;
+            this.btnCargarDatos.Click += new System.EventHandler(this.btnCargarDatos_Click);
             // 
             // tabVigilanteRegistro
             // 
@@ -415,10 +416,10 @@ namespace ParcialFinalPOO
             // 
             this.tabResumen.Controls.Add(this.dgvDatosEmpleados);
             this.tabResumen.Controls.Add(this.btnCargardatosEmpleado);
-            this.tabResumen.Location = new System.Drawing.Point(4, 22);
+            this.tabResumen.Location = new System.Drawing.Point(4, 24);
             this.tabResumen.Name = "tabResumen";
             this.tabResumen.Padding = new System.Windows.Forms.Padding(3);
-            this.tabResumen.Size = new System.Drawing.Size(646, 471);
+            this.tabResumen.Size = new System.Drawing.Size(646, 469);
             this.tabResumen.TabIndex = 3;
             this.tabResumen.Text = "Informacion de Empleados";
             this.tabResumen.UseVisualStyleBackColor = true;

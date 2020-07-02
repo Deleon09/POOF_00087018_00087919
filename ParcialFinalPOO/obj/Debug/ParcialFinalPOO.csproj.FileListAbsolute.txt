@@ -7,3 +7,11 @@ C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\obj\Debu
 C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.csproj.CoreCompileInputs.cache
 C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.exe
 C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.pdb
+C:\Users\DELL\Documents\GitHub\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.exe.config
+C:\Users\DELL\Documents\GitHub\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.Form1.resources
+C:\Users\DELL\Documents\GitHub\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.frmPrincipal.resources
+C:\Users\DELL\Documents\GitHub\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.Properties.Resources.resources
+C:\Users\DELL\Documents\GitHub\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.csproj.GenerateResource.cache
+C:\Users\DELL\Documents\GitHub\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.exe
+C:\Users\DELL\Documents\GitHub\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.pdb

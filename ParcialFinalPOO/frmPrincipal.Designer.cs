@@ -47,6 +47,9 @@ namespace ParcialFinalPOO
             this.btnAgregarRegistro = new System.Windows.Forms.Button();
             this.cmbUsuario = new System.Windows.Forms.ComboBox();
             this.tabAddORDrop = new System.Windows.Forms.TabPage();
+            this.grpDROP = new System.Windows.Forms.GroupBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.grpADD = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -56,30 +59,27 @@ namespace ParcialFinalPOO
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbDepartamento = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tabResumen = new System.Windows.Forms.TabPage();
-            this.tabTOP3 = new System.Windows.Forms.TabPage();
-            this.grpDROP = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnCargardatosEmpleado = new System.Windows.Forms.Button();
             this.dgvDatosEmpleados = new System.Windows.Forms.DataGridView();
-            this.btnTop3 = new System.Windows.Forms.Button();
+            this.btnCargardatosEmpleado = new System.Windows.Forms.Button();
+            this.tabTOP3 = new System.Windows.Forms.TabPage();
             this.dgvTop3 = new System.Windows.Forms.DataGridView();
+            this.btnTop3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabEmpleadoInformacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.dgvEmpleado)).BeginInit();
             this.tabVigilanteRegistro.SuspendLayout();
             this.tabAddORDrop.SuspendLayout();
+            this.grpDROP.SuspendLayout();
             this.grpADD.SuspendLayout();
             this.tabResumen.SuspendLayout();
-            this.tabTOP3.SuspendLayout();
-            this.grpDROP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.dgvDatosEmpleados)).BeginInit();
+            this.tabTOP3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.dgvTop3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +94,7 @@ namespace ParcialFinalPOO
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(654, 495);
+            this.tabControl1.Size = new System.Drawing.Size(655, 497);
             this.tabControl1.TabIndex = 0;
             // 
             // tabEmpleadoInformacion
@@ -104,10 +104,11 @@ namespace ParcialFinalPOO
             this.tabEmpleadoInformacion.Location = new System.Drawing.Point(4, 24);
             this.tabEmpleadoInformacion.Name = "tabEmpleadoInformacion";
             this.tabEmpleadoInformacion.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEmpleadoInformacion.Size = new System.Drawing.Size(646, 467);
+            this.tabEmpleadoInformacion.Size = new System.Drawing.Size(647, 469);
             this.tabEmpleadoInformacion.TabIndex = 0;
             this.tabEmpleadoInformacion.Text = "Informacion";
             this.tabEmpleadoInformacion.UseVisualStyleBackColor = true;
+            this.tabEmpleadoInformacion.Click += new System.EventHandler(this.tabEmpleadoInformacion_Click);
             // 
             // dgvEmpleado
             // 
@@ -116,10 +117,10 @@ namespace ParcialFinalPOO
             this.dgvEmpleado.ColumnHeadersHeightSizeMode =
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmpleado.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvEmpleado.Location = new System.Drawing.Point(3, 73);
+            this.dgvEmpleado.Location = new System.Drawing.Point(3, 75);
             this.dgvEmpleado.Name = "dgvEmpleado";
             this.dgvEmpleado.ReadOnly = true;
-            this.dgvEmpleado.Size = new System.Drawing.Size(640, 391);
+            this.dgvEmpleado.Size = new System.Drawing.Size(641, 391);
             this.dgvEmpleado.TabIndex = 1;
             // 
             // btnCargarDatos
@@ -146,7 +147,7 @@ namespace ParcialFinalPOO
             this.tabVigilanteRegistro.Location = new System.Drawing.Point(4, 24);
             this.tabVigilanteRegistro.Name = "tabVigilanteRegistro";
             this.tabVigilanteRegistro.Padding = new System.Windows.Forms.Padding(3);
-            this.tabVigilanteRegistro.Size = new System.Drawing.Size(646, 467);
+            this.tabVigilanteRegistro.Size = new System.Drawing.Size(647, 469);
             this.tabVigilanteRegistro.TabIndex = 1;
             this.tabVigilanteRegistro.Text = "Registro";
             this.tabVigilanteRegistro.UseVisualStyleBackColor = true;
@@ -245,10 +246,41 @@ namespace ParcialFinalPOO
             this.tabAddORDrop.Location = new System.Drawing.Point(4, 24);
             this.tabAddORDrop.Name = "tabAddORDrop";
             this.tabAddORDrop.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAddORDrop.Size = new System.Drawing.Size(646, 467);
+            this.tabAddORDrop.Size = new System.Drawing.Size(647, 469);
             this.tabAddORDrop.TabIndex = 2;
             this.tabAddORDrop.Text = "Agregar y Eliminar";
             this.tabAddORDrop.UseVisualStyleBackColor = true;
+            // 
+            // grpDROP
+            // 
+            this.grpDROP.Controls.Add(this.btnEliminar);
+            this.grpDROP.Controls.Add(this.comboBox2);
+            this.grpDROP.Location = new System.Drawing.Point(31, 276);
+            this.grpDROP.Name = "grpDROP";
+            this.grpDROP.Size = new System.Drawing.Size(567, 179);
+            this.grpDROP.TabIndex = 8;
+            this.grpDROP.TabStop = false;
+            this.grpDROP.Text = "Eliminar empleado:";
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.Red;
+            this.btnEliminar.Location = new System.Drawing.Point(394, 55);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(142, 78);
+            this.btnEliminar.TabIndex = 13;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(108, 72);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(142, 23);
+            this.comboBox2.TabIndex = 13;
             // 
             // grpADD
             // 
@@ -260,12 +292,12 @@ namespace ParcialFinalPOO
             this.grpADD.Controls.Add(this.textBox1);
             this.grpADD.Controls.Add(this.label10);
             this.grpADD.Controls.Add(this.label9);
-            this.grpADD.Controls.Add(this.comboBox1);
+            this.grpADD.Controls.Add(this.cmbDepartamento);
             this.grpADD.Controls.Add(this.label8);
             this.grpADD.Controls.Add(this.label5);
             this.grpADD.Controls.Add(this.label7);
             this.grpADD.Controls.Add(this.label6);
-            this.grpADD.Location = new System.Drawing.Point(32, 16);
+            this.grpADD.Location = new System.Drawing.Point(31, 16);
             this.grpADD.Name = "grpADD";
             this.grpADD.Size = new System.Drawing.Size(568, 248);
             this.grpADD.TabIndex = 7;
@@ -337,13 +369,13 @@ namespace ParcialFinalPOO
             this.label9.Text = "Contrasena:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // cmbDepartamento
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(141, 35);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(142, 23);
-            this.comboBox1.TabIndex = 5;
+            this.cmbDepartamento.FormattingEnabled = true;
+            this.cmbDepartamento.Location = new System.Drawing.Point(141, 35);
+            this.cmbDepartamento.Name = "cmbDepartamento";
+            this.cmbDepartamento.Size = new System.Drawing.Size(142, 23);
+            this.cmbDepartamento.TabIndex = 5;
             // 
             // label8
             // 
@@ -384,56 +416,22 @@ namespace ParcialFinalPOO
             // 
             this.tabResumen.Controls.Add(this.dgvDatosEmpleados);
             this.tabResumen.Controls.Add(this.btnCargardatosEmpleado);
-            this.tabResumen.Location = new System.Drawing.Point(4, 24);
+            this.tabResumen.Location = new System.Drawing.Point(4, 22);
             this.tabResumen.Name = "tabResumen";
             this.tabResumen.Padding = new System.Windows.Forms.Padding(3);
-            this.tabResumen.Size = new System.Drawing.Size(646, 467);
+            this.tabResumen.Size = new System.Drawing.Size(646, 469);
             this.tabResumen.TabIndex = 3;
             this.tabResumen.Text = "Informacion de Empleados";
             this.tabResumen.UseVisualStyleBackColor = true;
             // 
-            // tabTOP3
+            // dgvDatosEmpleados
             // 
-            this.tabTOP3.Controls.Add(this.dgvTop3);
-            this.tabTOP3.Controls.Add(this.btnTop3);
-            this.tabTOP3.Location = new System.Drawing.Point(4, 24);
-            this.tabTOP3.Name = "tabTOP3";
-            this.tabTOP3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTOP3.Size = new System.Drawing.Size(646, 467);
-            this.tabTOP3.TabIndex = 4;
-            this.tabTOP3.Text = "Top 3 Departamento";
-            this.tabTOP3.UseVisualStyleBackColor = true;
-            // 
-            // grpDROP
-            // 
-            this.grpDROP.Controls.Add(this.btnEliminar);
-            this.grpDROP.Controls.Add(this.comboBox2);
-            this.grpDROP.Location = new System.Drawing.Point(32, 276);
-            this.grpDROP.Name = "grpDROP";
-            this.grpDROP.Size = new System.Drawing.Size(567, 179);
-            this.grpDROP.TabIndex = 8;
-            this.grpDROP.TabStop = false;
-            this.grpDROP.Text = "Eliminar empleado:";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(109, 72);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(142, 23);
-            this.comboBox2.TabIndex = 13;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Red;
-            this.btnEliminar.Location = new System.Drawing.Point(394, 55);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(142, 78);
-            this.btnEliminar.TabIndex = 13;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.dgvDatosEmpleados.ColumnHeadersHeightSizeMode =
+                System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatosEmpleados.Location = new System.Drawing.Point(17, 117);
+            this.dgvDatosEmpleados.Name = "dgvDatosEmpleados";
+            this.dgvDatosEmpleados.Size = new System.Drawing.Size(608, 332);
+            this.dgvDatosEmpleados.TabIndex = 1;
             // 
             // btnCargardatosEmpleado
             // 
@@ -444,23 +442,17 @@ namespace ParcialFinalPOO
             this.btnCargardatosEmpleado.Text = "Cargar datos empleados";
             this.btnCargardatosEmpleado.UseVisualStyleBackColor = true;
             // 
-            // dgvDatosEmpleados
+            // tabTOP3
             // 
-            this.dgvDatosEmpleados.ColumnHeadersHeightSizeMode =
-                System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatosEmpleados.Location = new System.Drawing.Point(18, 116);
-            this.dgvDatosEmpleados.Name = "dgvDatosEmpleados";
-            this.dgvDatosEmpleados.Size = new System.Drawing.Size(608, 332);
-            this.dgvDatosEmpleados.TabIndex = 1;
-            // 
-            // btnTop3
-            // 
-            this.btnTop3.Location = new System.Drawing.Point(227, 45);
-            this.btnTop3.Name = "btnTop3";
-            this.btnTop3.Size = new System.Drawing.Size(206, 58);
-            this.btnTop3.TabIndex = 0;
-            this.btnTop3.Text = "Cargar datos Top3:";
-            this.btnTop3.UseVisualStyleBackColor = true;
+            this.tabTOP3.Controls.Add(this.dgvTop3);
+            this.tabTOP3.Controls.Add(this.btnTop3);
+            this.tabTOP3.Location = new System.Drawing.Point(4, 22);
+            this.tabTOP3.Name = "tabTOP3";
+            this.tabTOP3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabTOP3.Size = new System.Drawing.Size(646, 469);
+            this.tabTOP3.TabIndex = 4;
+            this.tabTOP3.Text = "Top 3 Departamento";
+            this.tabTOP3.UseVisualStyleBackColor = true;
             // 
             // dgvTop3
             // 
@@ -471,26 +463,36 @@ namespace ParcialFinalPOO
             this.dgvTop3.Size = new System.Drawing.Size(610, 327);
             this.dgvTop3.TabIndex = 1;
             // 
+            // btnTop3
+            // 
+            this.btnTop3.Location = new System.Drawing.Point(227, 45);
+            this.btnTop3.Name = "btnTop3";
+            this.btnTop3.Size = new System.Drawing.Size(206, 58);
+            this.btnTop3.TabIndex = 0;
+            this.btnTop3.Text = "Cargar datos Top3:";
+            this.btnTop3.UseVisualStyleBackColor = true;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 495);
+            this.ClientSize = new System.Drawing.Size(655, 497);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabEmpleadoInformacion.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.dgvEmpleado)).EndInit();
             this.tabVigilanteRegistro.ResumeLayout(false);
             this.tabVigilanteRegistro.PerformLayout();
             this.tabAddORDrop.ResumeLayout(false);
+            this.grpDROP.ResumeLayout(false);
             this.grpADD.ResumeLayout(false);
             this.grpADD.PerformLayout();
             this.tabResumen.ResumeLayout(false);
-            this.tabTOP3.ResumeLayout(false);
-            this.grpDROP.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.dgvDatosEmpleados)).EndInit();
+            this.tabTOP3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.dgvTop3)).EndInit();
             this.ResumeLayout(false);
         }
@@ -520,7 +522,6 @@ namespace ParcialFinalPOO
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
@@ -536,5 +537,6 @@ namespace ParcialFinalPOO
         private System.Windows.Forms.Button btnTop3;
         private System.Windows.Forms.DataGridView dgvDatosEmpleados;
         private System.Windows.Forms.DataGridView dgvTop3;
+        private System.Windows.Forms.ComboBox cmbDepartamento;
     }
 }

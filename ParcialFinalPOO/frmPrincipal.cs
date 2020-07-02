@@ -10,6 +10,9 @@ namespace ParcialFinalPOO
             InitializeComponent();
         }
 
-
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
-}
+} 

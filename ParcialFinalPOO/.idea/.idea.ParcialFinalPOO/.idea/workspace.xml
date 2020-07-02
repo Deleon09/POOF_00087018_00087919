@@ -4,10 +4,9 @@
     <list default="true" id="7f55f4bd-5771-4852-9366-749329f97b24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frmPrincipal.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/frmPrincipal.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frmPrincipal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/frmPrincipal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csproj.GenerateResource.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +18,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/frmPrincipal.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/frmPrincipal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/frmPrincipal.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConnectionDB.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/frmPrincipal.resx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -31,8 +31,8 @@
         <option value="$PROJECT_DIR$/Form1.Designer.cs" />
         <option value="$PROJECT_DIR$/ConnectionDB.cs" />
         <option value="$PROJECT_DIR$/Form1.cs" />
-        <option value="$PROJECT_DIR$/frmPrincipal.cs" />
         <option value="$PROJECT_DIR$/frmPrincipal.Designer.cs" />
+        <option value="$PROJECT_DIR$/frmPrincipal.cs" />
       </list>
     </option>
   </component>
@@ -91,6 +91,8 @@
       <workItem from="1593703938599" duration="5250000" />
       <workItem from="1593710165991" duration="1002000" />
       <workItem from="1593711182237" duration="673000" />
+      <workItem from="1593712064422" duration="9000" />
+      <workItem from="1593712095438" duration="480000" />
     </task>
     <servers />
   </component>

@@ -35,7 +35,7 @@ namespace ParcialFinalPOO
         {
             try
             {
-                string query = $"SELECT password FROM appuser WHERE username ='{cmbUsuario.Text}'";
+                string query = $"SELECT contrasena FROM usuario WHERE nombre ='{cmbUsuario.Text}'";
                 var dt = ConnectionDB.ExecuteQuery(query);
                 var dr = dt.Rows[0];
                 var contrasena = Convert.ToString(dr[0].ToString());

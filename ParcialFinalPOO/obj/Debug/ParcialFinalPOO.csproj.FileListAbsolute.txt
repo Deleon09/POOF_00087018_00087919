@@ -1,0 +1,9 @@
+C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\bin\Debug\ParcialFinalPOO.exe.config
+C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\bin\Debug\ParcialFinalPOO.exe
+C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\bin\Debug\ParcialFinalPOO.pdb
+C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.csprojAssemblyReference.cache
+C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.Properties.Resources.resources
+C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.csproj.GenerateResource.cache
+C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.csproj.CoreCompileInputs.cache
+C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.exe
+C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO\obj\Debug\ParcialFinalPOO.pdb

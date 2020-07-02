@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\DELL\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\DELL\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ParcialFinalPOO.-1127305178.00" t="ExcludeRecursive" />
-    <e p="C:\Users\DELL\RiderProjects\ParcialFinalPOO" t="IncludeRecursive">
+    <e p="C:\Users\dylan\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\dylan\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ParcialFinalPOO.-1778786292.00" t="ExcludeRecursive" />
+    <e p="C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO" t="IncludeRecursive">
       <e p="App.config" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="ConnectionDB.cs" t="Include" />
       <e p="Form1.cs" t="Include" />
       <e p="Form1.Designer.cs" t="Include" />
+      <e p="Form1.resx" t="Include" />
+      <e p="frmPrincipal.cs" t="Include" />
+      <e p="frmPrincipal.Designer.cs" t="Include" />
+      <e p="frmPrincipal.resx" t="Include" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
       <e p="ParcialFinalPOO.csproj" t="IncludeRecursive" />
       <e p="ParcialFinalPOO.sln" t="IncludeFlat" />
       <e p="Program.cs" t="Include" />

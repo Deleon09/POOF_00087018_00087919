@@ -16,5 +16,45 @@ namespace ParcialFinalPOO
         {
             InitializeComponent();
         }
+
+        private void frmInicioDeSesion_Load(object sender, EventArgs e)
+        {
+            string query = "select nombre from usuario";
+            var users = ConnectionDB.ExecuteQuery(query);
+            var usersCombo = new List<string>();
+
+            foreach (DataRow dr in users.Rows)
+            {
+                usersCombo.Add(dr[0].ToString());
+            }
+
+            cmbUsuario.DataSource = usersCombo;   
+        }
+
+        private void btnIniciaSesion_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = $"SELECT password FROM appuser WHERE username ='{cmbUsuario.Text}'";
+                var dt = ConnectionDB.ExecuteQuery(query);
+                var dr = dt.Rows[0];
+                var contrasena = Convert.ToString(dr[0].ToString());
+
+                if (txtContrasena.Text.Equals(contrasena))
+                {
+                    u.admin =  cmbUsuario.Text;
+                    frmPrincipal ventana = new frmPrincipal(u);
+                    ventana.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Contraseña Incorrecta");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ha ocurrido un error");
+            }   
+        }
     }
 }

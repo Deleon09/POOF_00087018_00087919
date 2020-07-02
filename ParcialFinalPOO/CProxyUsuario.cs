@@ -19,8 +19,7 @@ namespace ParcialFinalPOO
             List<usuario> lista = new List<usuario>();
             
             public List<usuario> Peticionlista(){
-            
-                //usuar = new usuarioDAO();
+                
                 lista = usuar.getLista();
                 return lista;
             }
@@ -28,7 +27,6 @@ namespace ParcialFinalPOO
             public void Peticionmetodo(int pOpcion, int id_departamento, string nombre, string apellido, string contrasena,
                 string dui, string fechanacimiento)
             {
-                //usuar = new usuarioDAO();
                 if (pOpcion == 1)
                     usuar.crearNuevo(id_departamento, nombre, apellido, contrasena, dui, fechanacimiento);
                 if (pOpcion == 2)

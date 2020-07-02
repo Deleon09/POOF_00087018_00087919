@@ -4,15 +4,11 @@
     <list default="true" id="7f55f4bd-5771-4852-9366-749329f97b24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CProxyRegistro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CProxyRegistro.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CProxyUsuario.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CProxyUsuario.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/ParcialFinalPOO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ParcialFinalPOO.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/ParcialFinalPOO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ParcialFinalPOO.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frmPrincipal.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/frmPrincipal.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frmPrincipal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/frmPrincipal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csproj.GenerateResource.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,17 +19,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/frmPrincipal.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/registro.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConnectionDB.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/departamento.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/frmPrincipal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/frmPrincipal.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CProxyUsuario.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/frmPrincipal.resx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/usuario.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/departamento.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CProxyDepartamento.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CProxyRegistro.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/registro.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/usuario.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CProxyDepartamento.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/frmPrincipal.resx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -45,10 +42,10 @@
         <option value="$PROJECT_DIR$/CProxyDepartamento.cs" />
         <option value="$PROJECT_DIR$/registro.cs" />
         <option value="$PROJECT_DIR$/frmPrincipal.Designer.cs" />
-        <option value="$PROJECT_DIR$/CProxyRegistro.cs" />
         <option value="$PROJECT_DIR$/CProxyUsuario.cs" />
-        <option value="$PROJECT_DIR$/Form1.cs" />
         <option value="$PROJECT_DIR$/frmPrincipal.cs" />
+        <option value="$PROJECT_DIR$/Form1.cs" />
+        <option value="$PROJECT_DIR$/CProxyRegistro.cs" />
       </list>
     </option>
   </component>
@@ -114,6 +111,7 @@
       <workItem from="1593725332524" duration="3928000" />
       <workItem from="1593729482995" duration="1077000" />
       <workItem from="1593730763573" duration="1341000" />
+      <workItem from="1593732371257" duration="1553000" />
     </task>
     <servers />
   </component>
@@ -236,24 +234,5 @@
     </state>
     <state width="1323" height="223" key="GridCell.Tab.4.right/0.0.1366.728@0.0.1366.728" timestamp="1593731563341" />
     <state width="1556" height="270" key="GridCell.Tab.4.right/0.0.1600.860@0.0.1600.860" timestamp="1593730411907" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Form1.cs</url>
-          <line>27</line>
-          <properties documentPath="$PROJECT_DIR$/Form1.cs" initialLine="27">
-            <startOffsets>
-              <option value="779" />
-            </startOffsets>
-            <endOffsets>
-              <option value="817" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

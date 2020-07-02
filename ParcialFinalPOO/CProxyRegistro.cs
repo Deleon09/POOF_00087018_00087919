@@ -9,22 +9,33 @@ namespace ParcialFinalPOO
         public interface ISujeto
         {
             void Peticion(int Popcion, int id_usuario, bool entrada, string fecha_hora, int temperatura);
+            List<registro> Peticionlista();
+            List<registro> Peticionlistaunica(string nombre);
         }
         
         public class ProxySencillo : ISujeto
         {
-            private registroDAO register;
+            private registroDAO register = new registroDAO();
+            List<registro> lista = new List<registro>();
 
+            public List<registro> Peticionlista()
+            {
+                lista = register.getLista();
+                return lista;
+            }
+            
             public void Peticion(int pOpcion, int id_usuario, bool entrada, string fecha_hora, int temperatura)
             {
-                register = new registroDAO();
-                
-
                 if (pOpcion == 1)
-                    register.getLista();
-                if (pOpcion == 2)
-                   register.crearNuevoRegistro(id_usuario, entrada, fecha_hora, temperatura); 
+                    register.crearNuevoRegistro(id_usuario, entrada, fecha_hora, temperatura);
             }
+
+            public List<registro> Peticionlistaunica(string nombre)
+            {
+                lista = register.getListaespecifica(nombre);
+                return lista;
+            }
+            
         }
         
         // Esta es la clase que estamos protegiendo con el proxy
@@ -33,6 +44,28 @@ namespace ParcialFinalPOO
             public List<registro> getLista()
             {
                 string sql = "select * from registro";
+
+                DataTable dt = ConnectionDB.ExecuteQuery(sql);
+
+                List<registro> lista = new List<registro>();
+                foreach (DataRow fila in dt.Rows)
+                {
+                    registro u = new registro();
+                    u.id_registro = Convert.ToInt32(fila[0].ToString());
+                    u.id_usuario = Convert.ToInt32(fila[1].ToString());
+                    u.entrada = Convert.ToBoolean(fila[2].ToString());
+                    u.fecha_hora = fila[3].ToString();
+                    u.temperatura = Convert.ToInt32(fila[4].ToString());
+
+                    lista.Add(u);
+                }
+                return lista;
+            }
+            
+            public List<registro> getListaespecifica(string name)
+            {
+                string sql = String.Format("select * from registro where nombre = '{0}';",
+                    name);
 
                 DataTable dt = ConnectionDB.ExecuteQuery(sql);
 

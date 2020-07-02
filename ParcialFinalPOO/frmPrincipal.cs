@@ -6,10 +6,13 @@ namespace ParcialFinalPOO
     public partial class frmPrincipal : Form
     {
         private int depa;
-        public frmPrincipal(int dep)
+        private usuario user;
+        
+        public frmPrincipal(int dep, usuario use)
         {
             InitializeComponent();
             depa = dep;
+            user = use;
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)

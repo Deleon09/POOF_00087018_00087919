@@ -25,20 +25,6 @@ namespace ParcialFinalPOO
             cmbUsuario.ValueMember = "id_usuario";
             cmbUsuario.DisplayMember = "nombre";
             cmbUsuario.DataSource = miProxyS.Peticionlista();
-            u = (usuario) cmbUsuario.SelectedItem;
-
-            /*string query = "select nombre from usuario";
-            var users = ConnectionDB.ExecuteQuery(query);
-            var usersCombo = new List<string>();
-
-            foreach (DataRow dr in users.Rows)
-            {
-                usersCombo.Add(dr[0].ToString());
-            }
-
-            cmbUsuario.DataSource = usersCombo;*/
-            // CProxyUsuario.ISujeto miProxyS = new CProxyUsuario.ProxySencillo();
-            //miProxyS.Peticion();
         }
 
         private void btnIniciaSesion_Click(object sender, EventArgs e)
@@ -58,7 +44,7 @@ namespace ParcialFinalPOO
                     var departamento = Convert.ToInt32(dr2[0].ToString());
                     
                     u.nombre =  cmbUsuario.Text;
-                    frmPrincipal ventana = new frmPrincipal(departamento);
+                    frmPrincipal ventana = new frmPrincipal(departamento, u);
                     ventana.Show();
                 }
                 else

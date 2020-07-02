@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f55f4bd-5771-4852-9366-749329f97b24" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CProxyDepartamento.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CProxyRegistro.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CProxyUsuario.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/departamento.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registro.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usuario.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParcialFinalPOO.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ParcialFinalPOO.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frmPrincipal.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/frmPrincipal.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frmPrincipal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/frmPrincipal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csprojAssemblyReference.cache" afterDir="false" />
@@ -18,21 +25,33 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/frmPrincipal.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/frmPrincipal.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConnectionDB.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/frmPrincipal.resx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/departamento.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/frmPrincipal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/frmPrincipal.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CProxyUsuario.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CProxyRegistro.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/usuario.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/registro.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CProxyDepartamento.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/frmPrincipal.resx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Form1.Designer.cs" />
         <option value="$PROJECT_DIR$/ConnectionDB.cs" />
-        <option value="$PROJECT_DIR$/Form1.cs" />
+        <option value="$PROJECT_DIR$/departamento.cs" />
+        <option value="$PROJECT_DIR$/usuario.cs" />
+        <option value="$PROJECT_DIR$/CProxyDepartamento.cs" />
+        <option value="$PROJECT_DIR$/registro.cs" />
+        <option value="$PROJECT_DIR$/CProxyUsuario.cs" />
         <option value="$PROJECT_DIR$/frmPrincipal.Designer.cs" />
+        <option value="$PROJECT_DIR$/Form1.cs" />
         <option value="$PROJECT_DIR$/frmPrincipal.cs" />
+        <option value="$PROJECT_DIR$/CProxyRegistro.cs" />
       </list>
     </option>
   </component>
@@ -93,6 +112,7 @@
       <workItem from="1593711182237" duration="673000" />
       <workItem from="1593712064422" duration="9000" />
       <workItem from="1593712095438" duration="480000" />
+      <workItem from="1593712757221" duration="5192000" />
     </task>
     <servers />
   </component>

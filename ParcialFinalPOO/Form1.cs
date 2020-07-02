@@ -12,6 +12,7 @@ namespace ParcialFinalPOO
 {
     public partial class Form1 : Form
     {
+        departamento u = new departamento();
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +29,9 @@ namespace ParcialFinalPOO
                 usersCombo.Add(dr[0].ToString());
             }
 
-            cmbUsuario.DataSource = usersCombo;   
+            cmbUsuario.DataSource = usersCombo;
+           // CProxyUsuario.ISujeto miProxyS = new CProxyUsuario.ProxySencillo();
+            //miProxyS.Peticion();
         }
 
         private void btnIniciaSesion_Click(object sender, EventArgs e)
@@ -42,7 +45,7 @@ namespace ParcialFinalPOO
 
                 if (txtContrasena.Text.Equals(contrasena))
                 {
-                    u.admin =  cmbUsuario.Text;
+                    u.nombre =  cmbUsuario.Text;
                     frmPrincipal ventana = new frmPrincipal(u);
                     ventana.Show();
                 }

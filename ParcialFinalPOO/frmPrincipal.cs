@@ -5,9 +5,11 @@ namespace ParcialFinalPOO
 {
     public partial class frmPrincipal : Form
     {
-        public frmPrincipal()
+        private departamento nombre;
+        public frmPrincipal(departamento dep)
         {
             InitializeComponent();
+            nombre = dep;
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)

@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\dylan\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\dylan\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ParcialFinalPOO.-1778786292.00" t="ExcludeRecursive" />
-    <e p="C:\Users\dylan\Desktop\Programar\POOF_00087018_00087919\ParcialFinalPOO" t="IncludeRecursive">
+    <e p="C:\Users\DELL\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\DELL\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ParcialFinalPOO.-692258521.00" t="ExcludeRecursive" />
+    <e p="C:\Users\DELL\Documents\GitHub\POOF_00087018_00087919\ParcialFinalPOO" t="IncludeRecursive">
       <e p="App.config" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="ConnectionDB.cs" t="Include" />
+      <e p="CProxyDepartamento.cs" t="Include" />
+      <e p="CProxyRegistro.cs" t="Include" />
+      <e p="CProxyUsuario.cs" t="Include" />
+      <e p="departamento.cs" t="Include" />
       <e p="Form1.cs" t="Include" />
       <e p="Form1.Designer.cs" t="Include" />
       <e p="Form1.resx" t="Include" />
@@ -26,6 +30,8 @@
         <e p="Settings.Designer.cs" t="Include" />
         <e p="Settings.settings" t="Include" />
       </e>
+      <e p="registro.cs" t="Include" />
+      <e p="usuario.cs" t="Include" />
     </e>
   </component>
 </project>

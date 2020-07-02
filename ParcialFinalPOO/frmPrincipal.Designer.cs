@@ -108,7 +108,6 @@ namespace ParcialFinalPOO
             this.tabEmpleadoInformacion.TabIndex = 0;
             this.tabEmpleadoInformacion.Text = "Informacion";
             this.tabEmpleadoInformacion.UseVisualStyleBackColor = true;
-            this.tabEmpleadoInformacion.Click += new System.EventHandler(this.tabEmpleadoInformacion_Click);
             // 
             // dgvEmpleado
             // 

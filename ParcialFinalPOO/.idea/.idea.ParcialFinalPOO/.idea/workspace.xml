@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f55f4bd-5771-4852-9366-749329f97b24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CProxyDepartamento.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CProxyRegistro.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CProxyUsuario.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/departamento.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registro.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usuario.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParcialFinalPOO.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ParcialFinalPOO.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frmPrincipal.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/frmPrincipal.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frmPrincipal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/frmPrincipal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CProxyRegistro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CProxyRegistro.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +101,8 @@
       <workItem from="1593711182237" duration="673000" />
       <workItem from="1593712064422" duration="9000" />
       <workItem from="1593712095438" duration="480000" />
-      <workItem from="1593712757221" duration="5192000" />
+      <workItem from="1593712757221" duration="5326000" />
+      <workItem from="1593723945482" duration="1221000" />
     </task>
     <servers />
   </component>

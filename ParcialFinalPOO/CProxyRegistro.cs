@@ -8,20 +8,22 @@ namespace ParcialFinalPOO
     {
         public interface ISujeto
         {
-            void Peticion(int Popcion);
+            void Peticion(int Popcion, int id_usuario, bool entrada, string fecha_hora, int temperatura);
         }
         
         public class ProxySencillo : ISujeto
         {
             private registroDAO register;
 
-            public void Peticion(int pOpcion)
+            public void Peticion(int pOpcion, int id_usuario, bool entrada, string fecha_hora, int temperatura)
             {
                 register = new registroDAO();
                 
 
                 if (pOpcion == 1)
                     register.getLista();
+                if (pOpcion == 2)
+                   register.crearNuevoRegistro(id_usuario, entrada, fecha_hora, temperatura); 
             }
         }
         
@@ -47,6 +49,16 @@ namespace ParcialFinalPOO
                     lista.Add(u);
                 }
                 return lista;
+            }
+            
+            public void crearNuevoRegistro(int id_usuario, bool entrada, string fecha_hora, int temperatura)
+            {
+                string sql = String.Format(
+                    "insert into registro(id_usuario, entrada, fecha_hora, temperatura) " +
+                    "values({0}, '{1}', '{2}', '{3}', '{4}', '{5}');",
+                    id_usuario, entrada, fecha_hora, temperatura);
+            
+                ConnectionDB.ExecuteNonQuery(sql);
             }
         }
         

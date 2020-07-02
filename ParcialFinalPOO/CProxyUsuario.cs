@@ -8,26 +8,28 @@ namespace ParcialFinalPOO
     {
         public interface ISujeto
         {
-            void Peticion(int Popcion, int id_departamento, string nombre, string apellido, string contrasena,
+            List<usuario> Peticion(int Popcion, int id_departamento, string nombre, string apellido, string contrasena,
                 string dui, string fechanacimiento);
         }
         
         public class ProxySencillo : ISujeto
         {
             private usuarioDAO usuar;
+            List<usuario> lista = new List<usuario>();
 
-            public void Peticion(int pOpcion, int id_departamento, string nombre, string apellido, string contrasena,
+            public List<usuario> Peticion(int pOpcion, int id_departamento, string nombre, string apellido, string contrasena,
                 string dui, string fechanacimiento)
             {
                 usuar = new usuarioDAO();
                     
                 if (pOpcion == 1)
-                    usuar.getLista();
+                    lista = usuar.getLista();
                 if(pOpcion == 2)
                     usuar.crearNuevo(id_departamento, nombre, apellido, contrasena, dui, fechanacimiento);
                 if(pOpcion == 3)
                     usuar.eliminar(dui);
-                
+
+                return lista;
             }
         }
         

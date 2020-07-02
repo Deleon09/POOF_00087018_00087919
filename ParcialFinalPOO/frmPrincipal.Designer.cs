@@ -31,7 +31,7 @@ namespace ParcialFinalPOO
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabContenedor = new System.Windows.Forms.TabControl();
             this.tabEmpleadoInformacion = new System.Windows.Forms.TabPage();
             this.dgvEmpleado = new System.Windows.Forms.DataGridView();
             this.btnCargarDatos = new System.Windows.Forms.Button();
@@ -70,7 +70,7 @@ namespace ParcialFinalPOO
             this.tabTOP3 = new System.Windows.Forms.TabPage();
             this.dgvTop3 = new System.Windows.Forms.DataGridView();
             this.btnTop3 = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
+            this.tabContenedor.SuspendLayout();
             this.tabEmpleadoInformacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.dgvEmpleado)).BeginInit();
             this.tabVigilanteRegistro.SuspendLayout();
@@ -83,19 +83,19 @@ namespace ParcialFinalPOO
             ((System.ComponentModel.ISupportInitialize) (this.dgvTop3)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabContenedor
             // 
-            this.tabControl1.Controls.Add(this.tabEmpleadoInformacion);
-            this.tabControl1.Controls.Add(this.tabVigilanteRegistro);
-            this.tabControl1.Controls.Add(this.tabAddORDrop);
-            this.tabControl1.Controls.Add(this.tabResumen);
-            this.tabControl1.Controls.Add(this.tabTOP3);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(655, 497);
-            this.tabControl1.TabIndex = 0;
+            this.tabContenedor.Controls.Add(this.tabEmpleadoInformacion);
+            this.tabContenedor.Controls.Add(this.tabVigilanteRegistro);
+            this.tabContenedor.Controls.Add(this.tabAddORDrop);
+            this.tabContenedor.Controls.Add(this.tabResumen);
+            this.tabContenedor.Controls.Add(this.tabTOP3);
+            this.tabContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabContenedor.Location = new System.Drawing.Point(0, 0);
+            this.tabContenedor.Name = "tabContenedor";
+            this.tabContenedor.SelectedIndex = 0;
+            this.tabContenedor.Size = new System.Drawing.Size(654, 497);
+            this.tabContenedor.TabIndex = 0;
             // 
             // tabEmpleadoInformacion
             // 
@@ -104,7 +104,7 @@ namespace ParcialFinalPOO
             this.tabEmpleadoInformacion.Location = new System.Drawing.Point(4, 24);
             this.tabEmpleadoInformacion.Name = "tabEmpleadoInformacion";
             this.tabEmpleadoInformacion.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEmpleadoInformacion.Size = new System.Drawing.Size(647, 469);
+            this.tabEmpleadoInformacion.Size = new System.Drawing.Size(646, 469);
             this.tabEmpleadoInformacion.TabIndex = 0;
             this.tabEmpleadoInformacion.Text = "Informacion";
             this.tabEmpleadoInformacion.UseVisualStyleBackColor = true;
@@ -119,7 +119,7 @@ namespace ParcialFinalPOO
             this.dgvEmpleado.Location = new System.Drawing.Point(3, 75);
             this.dgvEmpleado.Name = "dgvEmpleado";
             this.dgvEmpleado.ReadOnly = true;
-            this.dgvEmpleado.Size = new System.Drawing.Size(641, 391);
+            this.dgvEmpleado.Size = new System.Drawing.Size(640, 391);
             this.dgvEmpleado.TabIndex = 1;
             // 
             // btnCargarDatos
@@ -143,10 +143,10 @@ namespace ParcialFinalPOO
             this.tabVigilanteRegistro.Controls.Add(this.label1);
             this.tabVigilanteRegistro.Controls.Add(this.btnAgregarRegistro);
             this.tabVigilanteRegistro.Controls.Add(this.cmbUsuario);
-            this.tabVigilanteRegistro.Location = new System.Drawing.Point(4, 24);
+            this.tabVigilanteRegistro.Location = new System.Drawing.Point(4, 22);
             this.tabVigilanteRegistro.Name = "tabVigilanteRegistro";
             this.tabVigilanteRegistro.Padding = new System.Windows.Forms.Padding(3);
-            this.tabVigilanteRegistro.Size = new System.Drawing.Size(647, 469);
+            this.tabVigilanteRegistro.Size = new System.Drawing.Size(646, 471);
             this.tabVigilanteRegistro.TabIndex = 1;
             this.tabVigilanteRegistro.Text = "Registro";
             this.tabVigilanteRegistro.UseVisualStyleBackColor = true;
@@ -242,10 +242,10 @@ namespace ParcialFinalPOO
             // 
             this.tabAddORDrop.Controls.Add(this.grpDROP);
             this.tabAddORDrop.Controls.Add(this.grpADD);
-            this.tabAddORDrop.Location = new System.Drawing.Point(4, 24);
+            this.tabAddORDrop.Location = new System.Drawing.Point(4, 22);
             this.tabAddORDrop.Name = "tabAddORDrop";
             this.tabAddORDrop.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAddORDrop.Size = new System.Drawing.Size(647, 469);
+            this.tabAddORDrop.Size = new System.Drawing.Size(646, 471);
             this.tabAddORDrop.TabIndex = 2;
             this.tabAddORDrop.Text = "Agregar y Eliminar";
             this.tabAddORDrop.UseVisualStyleBackColor = true;
@@ -418,7 +418,7 @@ namespace ParcialFinalPOO
             this.tabResumen.Location = new System.Drawing.Point(4, 22);
             this.tabResumen.Name = "tabResumen";
             this.tabResumen.Padding = new System.Windows.Forms.Padding(3);
-            this.tabResumen.Size = new System.Drawing.Size(646, 469);
+            this.tabResumen.Size = new System.Drawing.Size(646, 471);
             this.tabResumen.TabIndex = 3;
             this.tabResumen.Text = "Informacion de Empleados";
             this.tabResumen.UseVisualStyleBackColor = true;
@@ -448,7 +448,7 @@ namespace ParcialFinalPOO
             this.tabTOP3.Location = new System.Drawing.Point(4, 22);
             this.tabTOP3.Name = "tabTOP3";
             this.tabTOP3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTOP3.Size = new System.Drawing.Size(646, 469);
+            this.tabTOP3.Size = new System.Drawing.Size(646, 471);
             this.tabTOP3.TabIndex = 4;
             this.tabTOP3.Text = "Top 3 Departamento";
             this.tabTOP3.UseVisualStyleBackColor = true;
@@ -475,12 +475,12 @@ namespace ParcialFinalPOO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(655, 497);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(654, 497);
+            this.Controls.Add(this.tabContenedor);
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.tabContenedor.ResumeLayout(false);
             this.tabEmpleadoInformacion.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.dgvEmpleado)).EndInit();
             this.tabVigilanteRegistro.ResumeLayout(false);
@@ -498,7 +498,6 @@ namespace ParcialFinalPOO
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabVigilanteRegistro;
         private System.Windows.Forms.TabPage tabEmpleadoInformacion;
         private System.Windows.Forms.TabPage tabAddORDrop;
@@ -537,5 +536,6 @@ namespace ParcialFinalPOO
         private System.Windows.Forms.DataGridView dgvDatosEmpleados;
         private System.Windows.Forms.DataGridView dgvTop3;
         private System.Windows.Forms.ComboBox cmbDepartamento;
+        private System.Windows.Forms.TabControl tabContenedor;
     }
 }

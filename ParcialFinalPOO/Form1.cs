@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ParcialFinalPOO
@@ -44,6 +37,7 @@ namespace ParcialFinalPOO
                     var departamento = Convert.ToInt32(dr2[0].ToString());
                     
                     u.nombre =  cmbUsuario.Text;
+                    u.id_usuario = (int)cmbUsuario.SelectedValue;
                     frmPrincipal ventana = new frmPrincipal(departamento, u);
                     ventana.Show();
                 }

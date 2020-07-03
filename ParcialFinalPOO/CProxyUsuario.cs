@@ -10,7 +10,7 @@ namespace ParcialFinalPOO
         {
             List<usuario> Peticionlista();
             void Peticionmetodo(int pOpcion, int id_departamento, string nombre, string apellido, string contrasena,
-                string dui, string fechanacimiento);
+                string dui, string fechanacimiento, int iduser);
         }
         
         public class ProxySencillo : ISujeto
@@ -25,12 +25,12 @@ namespace ParcialFinalPOO
             }
             
             public void Peticionmetodo(int pOpcion, int id_departamento, string nombre, string apellido, string contrasena,
-                string dui, string fechanacimiento)
+                string dui, string fechanacimiento, int iduser)
             {
                 if (pOpcion == 1)
                     usuar.crearNuevo(id_departamento, nombre, apellido, contrasena, dui, fechanacimiento);
                 if (pOpcion == 2)
-                    usuar.eliminar(dui);
+                    usuar.eliminar(nombre, iduser);
             }
         }
         
@@ -71,13 +71,18 @@ namespace ParcialFinalPOO
                 ConnectionDB.ExecuteNonQuery(sql);
             }
         
-            public void eliminar(string dui)
+            public void eliminar(string nombre, int iduser)
             {
-                string sql = String.Format(
-                    "delete from usuario where dui = '{0}'; ",
-                    dui);
+                string sql1 = String.Format(
+                    "delete from registro where id_usuario = {0}; ",
+                    iduser);
+                
+                string sql2 = String.Format(
+                    "delete from usuario where nombre = '{0}'; ",
+                    nombre);
             
-                ConnectionDB.ExecuteNonQuery(sql);
+                ConnectionDB.ExecuteNonQuery(sql1);
+                ConnectionDB.ExecuteNonQuery(sql2);
             }
         }
     }

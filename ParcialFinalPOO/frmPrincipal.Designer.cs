@@ -49,7 +49,7 @@ namespace ParcialFinalPOO
             this.tabAddORDrop = new System.Windows.Forms.TabPage();
             this.grpDROP = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbEliminar = new System.Windows.Forms.ComboBox();
             this.grpADD = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -185,10 +185,10 @@ namespace ParcialFinalPOO
             // 
             this.label3.Location = new System.Drawing.Point(59, 183);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 27);
+            this.label3.Size = new System.Drawing.Size(100, 27);
             this.label3.TabIndex = 6;
             this.label3.Text = "Entrada/Salida";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtFechaHora
             // 
@@ -230,6 +230,7 @@ namespace ParcialFinalPOO
             this.btnAgregarRegistro.TabIndex = 1;
             this.btnAgregarRegistro.Text = "Agregar Registro";
             this.btnAgregarRegistro.UseVisualStyleBackColor = true;
+            this.btnAgregarRegistro.Click += new System.EventHandler(this.btnAgregarRegistro_Click);
             // 
             // cmbUsuario
             // 
@@ -254,7 +255,7 @@ namespace ParcialFinalPOO
             // grpDROP
             // 
             this.grpDROP.Controls.Add(this.btnEliminar);
-            this.grpDROP.Controls.Add(this.comboBox2);
+            this.grpDROP.Controls.Add(this.cmbEliminar);
             this.grpDROP.Location = new System.Drawing.Point(31, 276);
             this.grpDROP.Name = "grpDROP";
             this.grpDROP.Size = new System.Drawing.Size(567, 179);
@@ -273,14 +274,15 @@ namespace ParcialFinalPOO
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // comboBox2
+            // cmbEliminar
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(108, 72);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(142, 23);
-            this.comboBox2.TabIndex = 13;
+            this.cmbEliminar.FormattingEnabled = true;
+            this.cmbEliminar.Location = new System.Drawing.Point(108, 72);
+            this.cmbEliminar.Name = "cmbEliminar";
+            this.cmbEliminar.Size = new System.Drawing.Size(142, 23);
+            this.cmbEliminar.TabIndex = 13;
             // 
             // grpADD
             // 
@@ -315,6 +317,7 @@ namespace ParcialFinalPOO
             this.btnAgregar.TabIndex = 12;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // textBox5
             // 
@@ -392,7 +395,8 @@ namespace ParcialFinalPOO
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 23);
             this.label5.TabIndex = 0;
-            this.label5.Text = "idDepartamento:";
+            this.label5.Text = "Departamento:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label7
             // 
@@ -407,7 +411,7 @@ namespace ParcialFinalPOO
             // 
             this.label6.Location = new System.Drawing.Point(61, 70);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 23);
+            this.label6.Size = new System.Drawing.Size(73, 23);
             this.label6.TabIndex = 1;
             this.label6.Text = "Nombre:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -416,10 +420,10 @@ namespace ParcialFinalPOO
             // 
             this.tabResumen.Controls.Add(this.dgvDatosEmpleados);
             this.tabResumen.Controls.Add(this.btnCargardatosEmpleado);
-            this.tabResumen.Location = new System.Drawing.Point(4, 24);
+            this.tabResumen.Location = new System.Drawing.Point(4, 22);
             this.tabResumen.Name = "tabResumen";
             this.tabResumen.Padding = new System.Windows.Forms.Padding(3);
-            this.tabResumen.Size = new System.Drawing.Size(646, 469);
+            this.tabResumen.Size = new System.Drawing.Size(646, 471);
             this.tabResumen.TabIndex = 3;
             this.tabResumen.Text = "Informacion de Empleados";
             this.tabResumen.UseVisualStyleBackColor = true;
@@ -441,6 +445,7 @@ namespace ParcialFinalPOO
             this.btnCargardatosEmpleado.TabIndex = 0;
             this.btnCargardatosEmpleado.Text = "Cargar datos empleados";
             this.btnCargardatosEmpleado.UseVisualStyleBackColor = true;
+            this.btnCargardatosEmpleado.Click += new System.EventHandler(this.btnCargardatosEmpleado_Click);
             // 
             // tabTOP3
             // 
@@ -451,7 +456,7 @@ namespace ParcialFinalPOO
             this.tabTOP3.Padding = new System.Windows.Forms.Padding(3);
             this.tabTOP3.Size = new System.Drawing.Size(646, 471);
             this.tabTOP3.TabIndex = 4;
-            this.tabTOP3.Text = "Top 3 Departamento";
+            this.tabTOP3.Text = "Departamento concurrido";
             this.tabTOP3.UseVisualStyleBackColor = true;
             // 
             // dgvTop3
@@ -469,8 +474,9 @@ namespace ParcialFinalPOO
             this.btnTop3.Name = "btnTop3";
             this.btnTop3.Size = new System.Drawing.Size(206, 58);
             this.btnTop3.TabIndex = 0;
-            this.btnTop3.Text = "Cargar datos Top3:";
+            this.btnTop3.Text = "Cargar datos:";
             this.btnTop3.UseVisualStyleBackColor = true;
+            this.btnTop3.Click += new System.EventHandler(this.btnTop3_Click);
             // 
             // frmPrincipal
             // 
@@ -479,6 +485,7 @@ namespace ParcialFinalPOO
             this.ClientSize = new System.Drawing.Size(654, 497);
             this.Controls.Add(this.tabContenedor);
             this.Name = "frmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.tabContenedor.ResumeLayout(false);
@@ -528,7 +535,6 @@ namespace ParcialFinalPOO
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.GroupBox grpADD;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.GroupBox grpDROP;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminar;
@@ -538,5 +544,6 @@ namespace ParcialFinalPOO
         private System.Windows.Forms.DataGridView dgvTop3;
         private System.Windows.Forms.ComboBox cmbDepartamento;
         private System.Windows.Forms.TabControl tabContenedor;
+        private System.Windows.Forms.ComboBox cmbEliminar;
     }
 }

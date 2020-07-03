@@ -10,7 +10,7 @@ namespace ParcialFinalPOO
         {
             void Peticion(int Popcion, int id_usuario, bool entrada, string fecha_hora, int temperatura);
             List<registro> Peticionlista();
-            List<registro> Peticionlistaunica(string nombre);
+            List<registro> Peticionlistaunica(int nombre);
         }
         
         public class ProxySencillo : ISujeto
@@ -30,7 +30,7 @@ namespace ParcialFinalPOO
                     register.crearNuevoRegistro(id_usuario, entrada, fecha_hora, temperatura);
             }
 
-            public List<registro> Peticionlistaunica(string nombre)
+            public List<registro> Peticionlistaunica(int nombre)
             {
                 lista = register.getListaespecifica(nombre);
                 return lista;
@@ -62,10 +62,9 @@ namespace ParcialFinalPOO
                 return lista;
             }
             
-            public List<registro> getListaespecifica(string name)
+            public List<registro> getListaespecifica(int name)
             {
-                string sql = String.Format("select * from registro where nombre = '{0}';",
-                    name);
+                string sql = $"select * from registro where id_usuario = {name}";
 
                 DataTable dt = ConnectionDB.ExecuteQuery(sql);
 
@@ -88,7 +87,7 @@ namespace ParcialFinalPOO
             {
                 string sql = String.Format(
                     "insert into registro(id_usuario, entrada, fecha_hora, temperatura) " +
-                    "values({0}, '{1}', '{2}', '{3}', '{4}', '{5}');",
+                    "values({0}, {1}, '{2}', {3});",
                     id_usuario, entrada, fecha_hora, temperatura);
             
                 ConnectionDB.ExecuteNonQuery(sql);

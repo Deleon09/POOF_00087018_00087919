@@ -9,20 +9,20 @@ namespace ParcialFinalPOO
         
         public interface ISujeto
         {
-            void Peticion(int Popcion);
+            List<departamento> Peticion(int Popcion);
         }
         
         public class ProxySencillo : ISujeto
         {
-            private departamentoDAO dep;
+            private departamentoDAO dep = new departamentoDAO();
+            List<departamento> lista = new List<departamento>();
 
-            public void Peticion(int pOpcion)
+            public List<departamento> Peticion(int pOpcion)
             {
-                dep = new departamentoDAO();
                 
-
                 if (pOpcion == 1)
-                    dep.getLista();
+                    lista = dep.getLista();
+                    return lista;
             }
         }
         

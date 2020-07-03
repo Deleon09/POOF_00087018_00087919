@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f55f4bd-5771-4852-9366-749329f97b24" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParcialFinalPOO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CProxyDepartamento.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CProxyDepartamento.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CProxyRegistro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CProxyRegistro.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CProxyUsuario.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CProxyUsuario.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/ParcialFinalPOO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ParcialFinalPOO.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/ParcialFinalPOO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ParcialFinalPOO.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frmPrincipal.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/frmPrincipal.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frmPrincipal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/frmPrincipal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ParcialFinalPOO.pdb" afterDir="false" />
     </list>
@@ -121,6 +113,7 @@
       <workItem from="1593730763573" duration="1341000" />
       <workItem from="1593732371257" duration="1553000" />
       <workItem from="1593734105071" duration="12340000" />
+      <workItem from="1593753154050" duration="274000" />
     </task>
     <servers />
   </component>
@@ -143,25 +136,25 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1593746923783">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1593753439169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593746923783" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593753439169" />
     <state width="1556" height="270" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1593730411904" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1593746923783">
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1593753439168">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593746923783" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593753439168" />
     <state width="1556" height="270" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1593730411904" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1593746923783">
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1593753439168">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593746923783" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593753439168" />
     <state width="1556" height="270" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1593730411904" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1593746923783">
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1593753439169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593746923783" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593753439169" />
     <state width="1556" height="270" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1593730411904" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1593746923784">
       <screen x="0" y="0" width="1366" height="728" />

@@ -89,6 +89,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.cmbUsuario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesion";
